@@ -1,0 +1,29 @@
+Post http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Learn Nest js 2",
+    "description": "Learning nestJS and creating 2"
+}
+
+###
+PUT http://localhost:3000/todo/653294806ab50e3ccd14b615 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Learn Nest js again",
+    "description": "Learning nestJS and creating 3",
+    "status": "IN_PROGRESS"
+}
+
+###
+GET http://localhost:3000/todo HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/todo/6532790862b2b11d50e6e298 HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/todo/6532790862b2b11d50e6e298
+
